@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-width: 0;
+}
+
+body {
+  /* pop */
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  background-color: #F1ECE6;
+  padding: 20px;
+  text-align: center;
+}
+
+.todo-img {
+  width: 230.77px;
+  height: 60px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #F3F3F3;
+}
+
+.tab-item {
+  width: 50%;
+  font-weight: 600;
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.tab-personal {
+  border-bottom: 5px solid #D98326;
+}
+
+.tab-professional {
+  color: #969696;
+}
+
+.tab-text {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  width: 1040px;
+  height: 78px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.input-text {
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  outline: none;
+  background-color: #F1ECE6;
+  border-color: #F1ECE6;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 32px;
+}
+
+.input-button {
+  width: 140px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #76B7CD;
+  font-size: 38px;
+  color: #F3F3F3;
+  font-weight: 600;
+  padding: 10.5px 27px;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  width: 1040px;
+  margin-top: 40px;
+  margin-bottom: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 45px;
+  padding-right: 50px;
+  border-radius: 50px;
+  background-color: #F1ECE6;
+}
+
+.task {
+  display: flex;
+  height: 88px;
+  align-items: center;
+}
+
+.checked-icon {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.task-text-container {
+  height: 100%;
+  width: 100%;
+}
+
+.task-text {
+  font-size: 32px;
+  font-weight: 400;
+  width: 100%;
+  border-bottom: 1px solid #76B7CD;
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: #C2C2C2;
+}
+
+.delete-icon {
+  margin-left: auto;
+}
+
+.clear-completed-container {
+  display: flex;
+  align-items: center;
+  margin-top: 77px;
+  margin-right: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+  justify-content: end;
+}
+
+.clear-completed-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #D98326;
+}
