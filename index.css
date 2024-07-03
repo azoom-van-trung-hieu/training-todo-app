@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   border-width: 0;
-  font-size: 0;
 }
 
 body {
@@ -15,6 +14,7 @@ body {
   background-color: #F1ECE6;
   padding: 20px;
   text-align: center;
+  font-size: 0;
 }
 
 .todo-img {
@@ -34,14 +34,16 @@ body {
   font-size: 32px;
   padding-top: 20px;
   padding-bottom: 5px;
-}
-
-.tab-personal {
-  border-bottom: 5px solid #D98326;
-}
-
-.tab-professional {
   color: #969696;
+}
+
+.tab-item:hover {
+  cursor: pointer;
+}
+
+.chosen-tab {
+  color: #000000;
+  border-bottom: 5px solid #D98326;
 }
 
 .tab-text {
@@ -82,6 +84,16 @@ body {
   padding: 10.5px 27px;
 }
 
+.input-button:disabled {
+  background-color: #cdcdcd;
+  cursor: not-allowed;
+}
+
+.input-button:not(:disabled):hover {
+  background-color: #66cccc;
+  cursor: pointer;
+}
+
 .task-container {
   display: flex;
   flex-direction: column;
@@ -105,6 +117,10 @@ body {
 .checked-icon {
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+.checked-icon:hover {
+  cursor: pointer;
 }
 
 .task-text-container {
@@ -131,6 +147,10 @@ body {
   margin-left: auto;
 }
 
+.delete-icon:hover {
+  cursor: pointer;
+}
+
 .clear-completed-container {
   display: flex;
   align-items: center;
@@ -140,6 +160,10 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   gap: 10px;
+}
+
+.clear-completed-container:hover {
+  cursor: pointer;
 }
 
 .clear-completed-text {
