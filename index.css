@@ -73,6 +73,10 @@ body {
   font-size: 32px;
 }
 
+.input-text::placeholder {
+  color: #969696;
+}
+
 .input-button {
   width: 140px;
   border-top-right-radius: 50px;
